@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     padding-top: 4rem;
-    /* "calling" the animation name, it will take 5s but and be run 2 times */
-    animation: welcome 5s 2;
+    /* "calling" the animation name, it will take 5s but and be run 1 time */
+    animation: welcome 5s 1;
 }
 
 /* Keyframes are used to set a new rule or a style for the animation and then

@@ -12,4 +12,6 @@
 
 ---
 
-[Live version here](https://unwieldy-play.surge.sh)
+[Live version here](https://kristbjorgosk.github.io/animation/)
+
+p.s please do not open in safari as the rotationg of the ball does not show there
