@@ -14,20 +14,21 @@
 
 .header p {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     padding-top: 4rem;
-    /* "calling" the animation name, it will take 5s but will be on going infinite */
-    animation: welcome 5s infinite;
+    /* "calling" the animation name, it will take 5s but and be run 2 times */
+    animation: welcome 5s 2;
 }
 
 /* Keyframes are used to set a new rule or a style for the animation and then
 I import/call the keyframe name to the syle element like I have abow "animation: welcome" */
 
-/* animation so the font size will get bigger and smaller again */
+/* animation so the font size will get bigger and smaller */
 @keyframes welcome {
     50% {
-        font-size: 60px;
+        font-size: 30px;
     }
 }
 
@@ -116,33 +117,36 @@ button:hover {
 /* this keyframe I did will make the circle change colors and rotate and move to the side */
 @keyframes circle {
     0% {
-        background-color: #FF685D;
+        background-color: #ff5d88;
         transform: translate(0, 0);
     }
 
-    /* the % indicate at what time ech animation / style should appear, 
+    15% {
+        background-color: #dd77fc;
+    }
+
+    /* the % indicate at what time each animation / style should appear, 
    at 25 % this style will happen when the animation is 25 % complete.  */
-
     25% {
-        background-color: #FF64F0;
-
+        background-color: #77e8fc;
     }
 
     50% {
-        background-color: #ff5185;
+        background-color: #51ffa8;
         /* translate is for the movement and rotate for 360 deg rotation */
         transform: translate(150px, 0) rotate(360deg);
     }
 
     75% {
-        background-color: #ff54da;
+        background-color: #fffc54;
     }
 
     80% {
         transform: translate(-150px, 0);
+        background-color: #ff934b;
     }
 
     100% {
-        background-color: #ff5b92;
+        background-color: #ff4b96;
     }
 }

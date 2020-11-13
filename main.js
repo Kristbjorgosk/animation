@@ -21,9 +21,8 @@ buttons.forEach((button) => {
   });
 });
 
-// cursor not showing up in browser so trying to fix it with this function
+// cursor was not showing up in browser in the live version so this function fixes that
 var cursor, cursoerHover;
-
 cursor = document.querySelector(".buttons button");
 
 setTimeout(function () {
@@ -31,7 +30,6 @@ setTimeout(function () {
   cursoerHover.id = "cursoerHover";
   cursor.appendChild(cursoerHover);
 
-  // Change container cursor from 'auto' to 'default',
   // to schedule cursor update while hovering overlay
   cursor.style.cursor = "default";
 }, 5000);
