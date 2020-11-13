@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(237, 237, 237);
+    color: rgb(65, 54, 65);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+.header p {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    /* "calling" the animation name, it will take 5s but will be on going infinite */
+    animation: welcome 5s infinite;
+}
+
+/* Keyframes are used to set a new rule or a style for the animation and then
+I import/call the keyframe name to the syle element like I have abow "animation: welcome" */
+
+/* animation so the font size will get bigger and smaller again */
+@keyframes welcome {
+    50% {
+        font-size: 60px;
+    }
+}
+
+/* made a div for the cursor but it is invisable and only can be seen when hovering over buttons (js) */
+.cursor {
+    position: absolute;
+    /* so the circle is exactly in the circle */
+    transform: translate(-50%, -50%);
+    /* so I can click through the cursor div */
+    pointer-events: none;
+    /* so the cursor is more smooth when changing */
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+}
+
+/* this is the pink hover circle, added this element in js */
+.cursoer-hover {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(231, 46, 176);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+button {
+    cursor: none;
+    background-color: white;
+    padding: 10px;
+    font-size: large;
+    color: rgb(107, 107, 107);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    width: 100%;
+}
+
+button:hover {
+    border: 3px solid black;
+}
+
+
+.round {
+    margin: 2rem;
+    background: linear-gradient(180deg, #4b6369 0%, rgba(230, 227, 227, 0) 100%);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 50%;
+    /* animation can be written all seperatly like here below are all in one line like 
+    I have done in ".header" above */
+    /* importing the keyframe */
+    animation-name: circle;
+    /* says how fast the animation will appear */
+    animation-duration: 5s;
+    /* how offten the animation will repeat */
+    animation-iteration-count: infinite;
+    /* the animation willmstart 5 sek afteryou open the website */
+    animation-delay: 5s;
+    /* makes the animation be more smoother */
+    animation-timing-function: ease;
+    /* it is also possible to make all anmiation rules in one line like here */
+
+}
+
+.round p {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: large;
+    padding-top: 120px
+}
+
+
+/* this keyframe I did will make the circle change colors and rotate and move to the side */
+@keyframes circle {
+    0% {
+        background-color: #FF685D;
+        transform: translate(0, 0);
+    }
+
+    /* the % indicate at what time ech animation / style should appear, 
+   at 25 % this style will happen when the animation is 25 % complete.  */
+
+    25% {
+        background-color: #FF64F0;
+
+    }
+
+    50% {
+        background-color: #ff5185;
+        /* translate is for the movement and rotate for 360 deg rotation */
+        transform: translate(150px, 0) rotate(360deg);
+    }
+
+    75% {
+        background-color: #ff54da;
+    }
+
+    80% {
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        background-color: #ff5b92;
+    }
+}
