@@ -12,6 +12,6 @@
 
 ---
 
-[Live version here](https://kristbjorgosk.github.io/animation/)
+[Live version here](https://dizzy-ball.netlify.app)
 
-p.s please do not open in safari as the rotationg of the ball does not show there
+p.s please do not open in safari as the rotation of the ball does not show there..
