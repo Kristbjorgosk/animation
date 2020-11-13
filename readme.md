@@ -18,4 +18,6 @@
 
 ---
 
-Live version here
+[Live version here](https://kristbjorgosk.github.io/animation/)
+
+p.s - please open it in chrome

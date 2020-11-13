@@ -33,6 +33,7 @@ I import/call the keyframe name to the syle element like I have abow "animation:
 
 /* made a div for the cursor but it is invisable and only can be seen when hovering over buttons (js) */
 .cursor {
+    cursor: auto;
     position: absolute;
     /* so the circle is exactly in the circle */
     transform: translate(-50%, -50%);
@@ -44,9 +45,11 @@ I import/call the keyframe name to the syle element like I have abow "animation:
 }
 
 /* this is the pink hover circle, added this element in js */
-.cursoer-hover {
+.cursoerHover {
     width: 4rem;
     height: 4rem;
+    cursor: pointer;
+    position: absolute;
     border-radius: 50%;
     background-color: rgb(231, 46, 176);
 }
